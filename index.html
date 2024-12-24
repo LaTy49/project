@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кыргыз Мурасы</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #ffffff, #f2f2f2);
+            color: #333;
+        }
+
+        header {
+            background: url('https://via.placeholder.com/1500x600?text=Кыргыз+Мурасы') no-repeat center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.5em;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            display: flex;
+            justify-content: center;
+            background: #8b0000;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .square {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            background-color: #8b0000;
+            color: #fff;
+            font-size: 1.5rem;
+            transition: background-color 0.3s, transform 0.3s;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .square img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .square:hover {
+            background-color: #a52a2a;
+            transform: scale(1.05);
+        }
+
+        .section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .section h2 {
+            color: #8b0000;
+            font-size: 2.5em;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        .carousel-indicators li {
+            background-color: #8b0000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Кыргыз Мурасы</h1>
+        <p>Национальный наряд и кухня Кыргызстана</p>
+    </header>
+
+    <nav>
+        <a href="#clothing-men">Мужская одежда</a>
+        <a href="#clothing-women">Женская одежда</a>
+        <a href="#food">Кухня</a>
+    </nav>
+
+    <div class="container my-4">
+        <div class="row gx-5 gy-3">
+            <div class="col-md-4 col-12">
+                <a href="man.html">
+                    <div class="square">
+                        <img src="https://ecofoto.ru/wp-content/uploads/2024/02/natsionalnyi-kostium-kyrgyzstana-kyrgyzii-25.webp" alt="Мужская одежда">
+                        <h5>Национальная мужская одежда</h5>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <a href="woman.html">
+                    <div class="square">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_kVYS6D4_YRBSWmnf0IZD7ERdKyEGuLkDGQ&s" alt="Женская одежда">
+                        <h5>Национальная женская одежда</h5>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <a href="food.html">
+                    <div class="square">
+                        <img src="https://gotovim-doma.ru/images/recipe/d/79/d793b559364a3f5e0846b208dc007aeb.jpg" alt="Национальная еда">
+                        <h5>Национальная еда</h5>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <a href="games.html">
+                    <div class="square">
+                        <img src="https://24.kg/files/media/40/40824.jpg" alt="Национальные игры">
+                        <h5>Национальные игры</h5>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <a href="legends.html">
+                    <div class="square">
+                        <img src="https://avatars.dzeninfra.ru/get-zen_doc/4478350/pub_6493e9b493e0420633d7bf3a_6493ed039f10ce679a7adec4/scale_1200" alt="Легенды и мифы">
+                        <h5>Кыргызские легенды и мифы</h5>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-4 col-12">
+                <a href="nature.html">
+                    <div class="square">
+                        <img src="https://triptokyrgyzstan.com/sites/default/files/styles/blog/public/media/image/kalachov_k._ala_too.jpg.webp?itok=pieYqbJE" alt="Природа">
+                        <h5>Природа</h5>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <h2>История кыргызов</h2>
+            <p>Кыргызский народ — это древняя нация, чьи корни уходят в глубокую древность. Первые упоминания о кыргызах встречаются в китайских источниках, датируемых II веком до нашей эры...</p>
+        </div>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTFyTdZuUP5Z2_cQYbaSkoLUq7Chh39fdTtQ&s" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDiynwPIGZU4MO386jUqSm7OZGooA-eoKjlQ&s" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfmEqh_UBwujdYyKUtRTkf_vLLeSlsrfKmsA&s" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+
+        <div class="section">
+            <h2>Современные кыргызы</h2>
+            <p>Сегодня кыргызы составляют основное население Кыргызстана — страны с богатой историей и разнообразной природой...</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Кыргыз Мурасы. Все права защищены.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
